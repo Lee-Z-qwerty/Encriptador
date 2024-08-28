@@ -164,7 +164,7 @@ body {
 
 .output__section__mensaje-container{
     position: absolute;
-    top: 130px;
+    top: 280px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -308,6 +308,7 @@ body {
 
 .footer_parrafo{
     text-align: right;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -372,16 +373,15 @@ body {
     }
     
     .output__section__imagen{
-        display: none;
+        opacity: 0;
+        pointer-events: none;
     }
 
 
-    .output__section__imagen-container{
+    
         
         
-        
-        
-    }
+
 
     
 
@@ -392,6 +392,7 @@ body {
 
     .input__section__buttons {
         flex-direction: column;
+        gap: 10px;
         
     }
 
@@ -400,7 +401,11 @@ body {
     }
 
     .buttons__copiar{
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        width: 100%;
+        
+        
+        
     }
     
 
