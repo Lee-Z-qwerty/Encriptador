@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-    --color-primario: #ece2d579;
-    --color-secundario: hsl(239, 78%, 29%);
+    --color-primario: #babaec79;
+    --color-secundario: darkblue;
     --color-terciario: #0b358f;
     --color-cuarto: #f3ede0;
     --color-quinto: #ffffff;
@@ -47,10 +47,10 @@ body {
 }
 
 .input__section__area {
-    border: 1px solid var(--color-secundario);
-    border-radius: 5px;
-    background-color: var(--color-primario);
-    color: var(--color-terciario);
+    
+    border: none;
+    background-color: transparent;
+    color: var(--color-secundario);
     padding: 10px;
     font-size: 2rem;
     height: 400px;
@@ -101,17 +101,17 @@ body {
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
-    background-color: #ffffff;
-  
-    
+    background-color: #eaecf8;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 32px;
     position: relative;
     min-height: 300px;
     
 }
 
 .output__section__area {
-    border: 1px solid var(--color-secundario);
-    border-radius: 5px;
+    border: none;
+    border-radius: 32px;
     background-color: var(--color-quinto);
     color: var(--color-terciario);
     padding: 10px;
@@ -120,6 +120,7 @@ body {
     z-index: 2;
     display: none;
     height: 400px;
+    
     
 }
 
@@ -146,7 +147,7 @@ body {
 
 .output__section__imagen-container{
     position: relative;
-    width: 100%;
+    width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +322,7 @@ body {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
     .container {
         flex-direction: column;
     }
@@ -362,6 +363,10 @@ body {
         font-size: 1rem;
         height: 150px;
         width: 95%;
+    }
+    
+    .output__section__imagen{
+        display: none;
     }
 
     .output__section__imagen-container{
